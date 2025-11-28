@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Great+Vibes&display=swap');
 
-
-:root{
-  --card-w: 600px;
-  --card-h: 900px;
-  --gold-1: #d6b755;
-  --gold-2: #f0d66b;
-  --paper: #fffaf7;
-}
-
 /* Fondo general */
 html,body{
   height:100%;
@@ -20,112 +11,6 @@ html,body{
   font-family: "Montserrat", sans-serif;
   padding:20px;
 }
-
-/* Tarjeta */
-.invitation {
-  width: var(--card-w);
-  height: var(--card-h);
-  box-shadow: 0 12px 40px rgba(0,0,0,0.12);
-  border-radius: 18px;
-  position: relative;
-  overflow: hidden;
-
-  /* imagen de fondo (usa tu PNG) */
-  background-image: url('invitation.png');
-  background-size: cover;
-  background-position: center;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-
-/* capa blanca suave */
-.overlay {
-  position:absolute;
-  inset:0;
-  background: rgba(255,255,255,0.85);
-}
-
-/* marco dorado */
-.frame {
-  width:86%;
-  height:86%;
-  position:relative;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-
-.frame::before{
-  content:"";
-  position:absolute;
-  width:100%;
-  height:100%;
-  background:linear-gradient(135deg,var(--gold-1), var(--gold-2));
-  clip-path: polygon(
-    10% 0%, 90% 0%, 100% 10%,
-    100% 90%, 90% 100%, 10% 100%,
-    0% 90%, 0% 10%
-  );
-  opacity:0.95;
-}
-
-/* panel interno */
-.panel {
-  width:86%;
-  height:86%;
-  background: rgba(255,255,255,0.95);
-  border-radius: 14px;
-  padding:48px 36px;
-  text-align:center;
-  position:relative;
-  z-index:2;
-}
-
-/* corona */
-.crown {
-  width:88px;
-  margin:8px 0 6px 0;
-}
-
-/* número 15 */
-.big-number {
-  font-weight:800;
-  font-size:130px;
-  line-height:0.9;
-  background: linear-gradient(90deg, #b8862a, #f6d57a);
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-/* texto “mis años” */
-.mis-anos {
-  font-family: "Great Vibes", cursive;
-  font-size:44px;
-  color:#bd8f36;
-  margin-top:-10px;
-}
-
-/* mensaje */
-.message {
-  margin-top:20px;
-  color:#7b5a56;
-  font-size:17px;
-  line-height:1.6;
-}
-
-/* mariposas */
-.butter {
-  position:absolute;
-  z-index:5;
-  opacity:0.9;
-  filter: drop-shadow(0 6px 10px rgba(0,0,0,0.08));
-}
-
-.b1{ right:34px; top:120px; width:68px; transform: rotate(8deg); }
-.b2{ left:24px; bottom:110px; width:82px; transform: rotate(-8deg); }
-.b3{ left:42%; top:48%; width:46px; transform: rotate(-12deg); }
 
 
 .quince-container {
