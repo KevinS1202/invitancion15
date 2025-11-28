@@ -1,34 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Great+Vibes&display=swap');
 
-.quince-container {
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal con el fondo */
+.invitation {
+    width: 420px;              /* ajusta según necesites */
+    height: 600px;             /* ajusta según necesites */
+    background-image: url("img/fondo 15.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     position: relative;
-    width: 380px;        /* ajustable */
-    height: 180px;       /* ajustable */
+}
+
+/* Contenedor del texto centrado */
+.quince-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%); /* más arriba o abajo */
     text-align: center;
-    margin: 0 auto;
 }
 
 /* Número grande */
 .num {
     font-family: 'Playfair Display', serif;
-    font-size: 140px;
+    font-size: 160px;
     font-weight: 700;
     background: linear-gradient(180deg, #f9e48a 0%, #d4a740 50%, #b5832c 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: block;
-    line-height: 120px;
+    line-height: 130px;
 }
 
 /* Texto "mis años" */
 .texto {
     position: absolute;
-    top: 65px;         /* posición sobre el número */
+    top: 55px;   /* Ajusta para que cruce exactamente el número */
     width: 100%;
     left: 0;
     font-family: 'Great Vibes', cursive;
-    font-size: 60px;
-    font-weight: 400;
+    font-size: 65px;
     background: linear-gradient(180deg, #f9e48a 0%, #d4a740 50%, #b5832c 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
