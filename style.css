@@ -1,18 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Great+Vibes&display=swap');
 
-/* Fondo general */
-html,body{
-  height:100%;
-  margin:0;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background: linear-gradient(180deg,#f6eef0 0%, #fffaf7 100%);
-  font-family: "Montserrat", sans-serif;
-  padding:20px;
-}
-
-
 .quince-container {
     position: relative;
     width: 380px;        /* ajustable */
@@ -45,12 +32,4 @@ html,body{
     background: linear-gradient(180deg, #f9e48a 0%, #d4a740 50%, #b5832c 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-
-/* responsive */
-@media (max-width:700px){
-  :root{ --card-w: 340px; --card-h: 510px; }
-  .big-number{ font-size:72px; }
-  .mis-anos{ font-size:28px; }
 }
