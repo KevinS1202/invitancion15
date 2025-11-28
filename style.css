@@ -54,3 +54,26 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+/* TEXTO DORADO */
+.gold {
+    background: linear-gradient(180deg, #f9e48a 0%, #d4a740 45%, #b5832c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Texto inferior */
+.message {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+/* Aplicamos el dorado al mensaje */
+.message {
+    background: linear-gradient(180deg, #f9e48a 0%, #d4a740 45%, #b5832c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
