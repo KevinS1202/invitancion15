@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Great+Vibes&display=swap');
+
+
 :root{
   --card-w: 600px;
   --card-h: 900px;
@@ -123,6 +126,42 @@ html,body{
 .b1{ right:34px; top:120px; width:68px; transform: rotate(8deg); }
 .b2{ left:24px; bottom:110px; width:82px; transform: rotate(-8deg); }
 .b3{ left:42%; top:48%; width:46px; transform: rotate(-12deg); }
+
+
+.quince-container {
+    position: relative;
+    width: 380px;        /* ajustable */
+    height: 180px;       /* ajustable */
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Número grande */
+.num {
+    font-family: 'Playfair Display', serif;
+    font-size: 140px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #f9e48a 0%, #d4a740 50%, #b5832c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: block;
+    line-height: 120px;
+}
+
+/* Texto "mis años" */
+.texto {
+    position: absolute;
+    top: 65px;         /* posición sobre el número */
+    width: 100%;
+    left: 0;
+    font-family: 'Great Vibes', cursive;
+    font-size: 60px;
+    font-weight: 400;
+    background: linear-gradient(180deg, #f9e48a 0%, #d4a740 50%, #b5832c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 /* responsive */
 @media (max-width:700px){
