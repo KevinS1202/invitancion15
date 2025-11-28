@@ -10,70 +10,75 @@ body {
     height: 100vh;
 }
 
-/* Contenedor principal con el fondo */
+/* CONTENEDOR DEL FONDO */
 .invitation {
-    width: 420px;              /* ajusta según necesites */
-    height: 600px;             /* ajusta según necesites */
-    background-image: url("img/fondo 15.png");
+    width: 420px;
+    height: 600px;
+    background-image: url("img/fonod 15.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    padding-top: 120px; /* mueve hacia abajo el contenido si es necesario */
 }
 
-/* Contenedor del texto centrado */
+/* CONTENEDOR DEL TITULAR */
 .quince-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -55%); /* más arriba o abajo */
     text-align: center;
+    position: relative;
 }
 
-/* Número grande */
+/* CORONA */
+.corona {
+    width: 120px;               /* ajusta el tamaño */
+    position: absolute;
+    top: -90px;                 /* sube o baja la corona */
+    left: 50%;
+    transform: translateX(-50%);
+    filter: drop-shadow(0 0 6px rgba(255,255,255,0.9));
+}
+
+/* NÚMERO 15 */
 .num {
     font-family: 'Playfair Display', serif;
     font-size: 160px;
     font-weight: 700;
-    background: linear-gradient(180deg, #f9e48a 0%, #d4a740 50%, #b5832c 100%);
+    background: linear-gradient(180deg, #f9e48a, #d4a740 50%, #b5832c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    display: block;
     line-height: 130px;
+    margin-top: 40px; /* espacio para la corona */
 }
 
-/* Texto "mis años" */
+/* MIS AÑOS — AHORA HORIZONTAL ABAJO DEL 15 */
 .texto {
-    position: absolute;
-    top: 55px;   /* Ajusta para que cruce exactamente el número */
-    width: 100%;
-    left: 0;
+    display: block;
+    margin-top: -10px; /* ajusta para que quede pegado al número */
     font-family: 'Great Vibes', cursive;
-    font-size: 65px;
-    background: linear-gradient(180deg, #f9e48a 0%, #d4a740 50%, #b5832c 100%);
+    font-size: 70px;
+    text-align: center;
+
+    /* COLOR DORADO */
+    background: linear-gradient(180deg, #f9e48a, #d4a740 50%, #b5832c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-/* TEXTO DORADO */
-.gold {
-    background: linear-gradient(180deg, #f9e48a 0%, #d4a740 45%, #b5832c 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+
+    /* BORDE BLANCO BRILLANTE */
+    text-shadow:
+        0 0 4px rgba(255,255,255,0.9),
+        0 0 8px rgba(255,255,255,0.7),
+        0 0 12px rgba(255,255,255,0.5);
 }
 
-/* Texto inferior */
+/* MENSAJE INFERIOR */
 .message {
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
-    text-align: center;
-    margin-top: 20px;
     line-height: 1.5;
-}
+    margin-top: 40px;
 
-/* Aplicamos el dorado al mensaje */
-.message {
-    background: linear-gradient(180deg, #f9e48a 0%, #d4a740 45%, #b5832c 100%);
+    background: linear-gradient(180deg, #f9e48a, #d4a740 50%, #b5832c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
