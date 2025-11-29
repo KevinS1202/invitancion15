@@ -81,15 +81,16 @@ body {
 
 /* MENSAJE INFERIOR */
 .message {
-    width: 300px;                 /* ancho fijo */
-    margin: 30px auto 0 auto;     /* centra horizontalmente */
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     line-height: 1.5;
+    margin-top: 40px;
+    color: #d4a740; /* dorado sólido */
+    font-weight: 700;
 
-    background: linear-gradient(180deg, #000000, #b5832c 50%, #b5832c);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /* Borde negro para resaltar */
+    -webkit-text-stroke: 1.2px #000;
+    text-stroke: 1.2px #000; /* soporte en navegadores */
 }
 
