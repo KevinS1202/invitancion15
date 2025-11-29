@@ -19,8 +19,16 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    padding-top: 120px; /* mueve hacia abajo el contenido si es necesario */
+    padding-top: 120px;
+
+    /* --- Borde 3D rosado bajo --- */
+    border: 4px solid #ff7bc3; /* borde principal rosado */
+    box-shadow:
+        0 6px 0 #e26da9,   /* sombra sólida inferior (efecto 3D) */
+        0 10px 12px rgba(0,0,0,0.25); /* sombra difuminada para más realismo */
+    border-radius: 12px; /* opcional: esquinas redondeadas */
 }
+
 
 /* CONTENEDOR DEL TITULAR */
 .quince-container {
