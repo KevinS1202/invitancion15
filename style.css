@@ -22,10 +22,7 @@ body {
     padding-top: 120px;
 
     /* --- Borde 3D rosado bajo --- */
-    border: 4px solid #ff7bc3; /* borde principal rosado */
-    box-shadow:
-        0 6px 0 #e26da9,   /* sombra sólida inferior (efecto 3D) */
-        0 10px 12px rgba(0,0,0,0.25); /* sombra difuminada para más realismo */
+    box-shadow: 0 35px 0 #ff7bc336, 0 30px 30px rgba(0, 0, 0, 0.25);
     border-radius: 12px; /* opcional: esquinas redondeadas */
 }
 
