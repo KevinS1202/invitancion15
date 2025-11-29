@@ -26,6 +26,7 @@ body {
 .quince-container {
     text-align: center;
     position: relative;
+    margin-top: 60px;
 }
 
 /* CORONA */
@@ -76,9 +77,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     line-height: 1.5;
-    margin-top: 40px;
+    margin-top: 30px;
 
-    background: linear-gradient(180deg, #f9e48a, #d4a740 50%, #b5832c);
+    background: linear-gradient(180deg, #000000, #b5832c 0%, #b5832c)
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
