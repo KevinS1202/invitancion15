@@ -85,16 +85,15 @@ body {
     font-size: 18px;
     line-height: 1.5;
 
-    /* COLOR DORADO IGUAL AL QUE ME MOSTRASTE */
-    background: linear-gradient(180deg, #f9e48a, #d4a740 50%, #b5832c);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /* COLOR DORADO SÓLIDO */
+    color: #d4a740;
 
-    /* BORDE BLANCO BRILLANTE */
+    /* BORDE / BRILLO BLANCO */
     text-shadow:
-        0 0 4px #ffffff,     /* brillo blanco */
-        0 0 6px #d4a740,     /* brillo dorado */
-        0 0 10px #b5832c;    /* sombra cálida */
+        0 0 3px #ffffff,     /* brillo blanco */
+        0 0 6px #ffffff,     /* brillo más fuerte */
+        0 0 8px #b5832c,     /* brillo dorado cálido */
+        0 0 12px #b5832c;    /* borde suave */
 }
 
 
