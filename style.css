@@ -59,7 +59,7 @@ body {
 /* MIS AÑOS — AHORA HORIZONTAL ABAJO DEL 15 */
 .texto {
     display: block;
-    margin-top: -10px; /* ajusta para que quede pegado al número */
+    margin-top: 10px; /* ajusta para que quede pegado al número */
     font-family: 'Great Vibes', cursive;
     font-size: 70px;
     text-align: center;
@@ -78,15 +78,23 @@ body {
 
 /* MENSAJE INFERIOR */
 .message {
-    width: 300px;                 /* ancho fijo */
-    margin: 30px auto 0 auto;     /* centra horizontalmente */
+    width: 300px;                 
+    margin: 10px auto 0 auto;     
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     line-height: 1.5;
 
-    background: linear-gradient(180deg, #000000, #b5832c 50%, #b5832c);
+    /* COLOR DORADO IGUAL AL QUE ME MOSTRASTE */
+    background: linear-gradient(180deg, #f9e48a, #d4a740 50%, #b5832c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    /* BORDE BLANCO BRILLANTE */
+    text-shadow:
+        0 0 4px #ffffff,     /* brillo blanco */
+        0 0 6px #d4a740,     /* brillo dorado */
+        0 0 10px #b5832c;    /* sombra cálida */
 }
+
 
