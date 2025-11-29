@@ -38,7 +38,7 @@ body {
 .corona {
     width: 120px;               /* ajusta el tamaño */
     position: absolute;
-    top: -90px;                 /* sube o baja la corona */
+    top: -105px;                 /* sube o baja la corona */
     left: 50%;
     transform: translateX(-50%);
     filter: drop-shadow(0 0 6px rgba(255,255,255,0.9));
@@ -89,11 +89,7 @@ body {
     color: #d4a740;
 
     /* BORDE / BRILLO BLANCO */
-    text-shadow:
-        0 0 3px #ffffff,     /* brillo blanco */
-        0 0 6px #ffffff,     /* brillo más fuerte */
-        0 0 8px #b5832c,     /* brillo dorado cálido */
-        0 0 12px #b5832c;    /* borde suave */
+    text-shadow: 0 0 3px #b5832c, 0 0 6px #fff, 0 0 8px #fff, 0 0 12px #d4a740;
 }
 
 
